@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
                 <ul className={`md:flex md:gap-8 ${isMenuOpen ? 'block' : 'hidden'} absolute md:static top-full left-0 w-full md:w-auto bg-slate-700 md:bg-transparent md:flex-row flex-col transition-all duration-300`}>
                     <li className='cursor-pointer py-2 md:py-0 md:px-4 hover:font-bold transition-all duration-150'>Home</li>
-                    <li className='cursor-pointer py-2 md:py-0 md:px-4 hover:font-bold transition-all duration-150'>Your Tasks</li>
+                    <li className='cursor-pointer w-24  hover:font-bold transition-all duration-150'>Your Tasks</li>
                 </ul>
             </nav>
             {isMenuOpen && <div className="fixed inset-0 bg-black opacity-25 z-0" onClick={toggleMenu}></div>}
